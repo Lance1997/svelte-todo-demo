@@ -18,7 +18,7 @@
     setTimeout(() => {
       element.classList.remove("block");
       element.classList.add("hidden");
-    }, 2500);
+    }, 1500);
   }
 
   type todosType = {
@@ -155,7 +155,7 @@
   <div
     class="grid grid-cols-2 p-4 my-5 bg-gray-500 rounded-lg shadow-2xl dark:bg-transparent"
   >
-    <label class="text-lg text-white dark:text-gray-500" for="newItem"
+    <label class="col-span-2 text-2xl text-white dark:text-gray-500" for="newItem"
       >Add New Item: <small>Press Enter after typing to add new item</small></label
     >
     <input
@@ -180,7 +180,7 @@
   <div class="my-12">
     <ul class="">
       {#each todos as todo (todo.id)}
-        <li class="flex justify-around p-2 text-2xl rounded-lg shadow-lg">
+        <li class="flex justify-between px-6 py-2 m-2 text-3xl rounded-lg shadow-xl md:text-2xl">
           <span>{todo.text}</span>
           <i
             on:click={deleteItem}
