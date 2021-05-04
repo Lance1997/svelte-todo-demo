@@ -8,10 +8,6 @@ Type new todos with the input box and press Enter Key to add new todo.
 
 Use the Theme button to also switch between the dark and light theme of the app.
 
-### NOTE:
-* To host on gh-pages, I added my **dist** directory, ideally the **dist** directory is the build of the app in production and so is not supposed to be published here.
-* You can uncomment this directory in your .gitignore file to ignore this directory in your project, in case you want to upload it to github.
-
 ## Recommended IDE Setup
 
 [VSCode](https://code.visualstudio.com/) + [Svelte](https://marketplace.visualstudio.com/items?itemName=svelte.svelte-vscode).
@@ -27,3 +23,8 @@ npm install
 
 npm run dev
 ```
+
+
+### NOTE:
+* To use the deploy.sh script to deploy to *gh-pages*, change the name **lance1997** to your github username and change the repo name **svelte-todo-demo** to your repo.
+* Also change the **base** directory config in the `vite.config.js` file to your repository name.
