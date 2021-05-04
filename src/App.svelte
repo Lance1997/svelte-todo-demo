@@ -162,7 +162,7 @@
       bind:value={newItem}
       on:keydown={addNewItem}
       type="text"
-      class="block w-full col-span-2 p-2 my-5 tracking-wide rounded-xl dark:bg-white focus:outline-none dark:text-black"
+      class="block w-full h-12 col-span-2 p-2 my-5 text-xl tracking-wide rounded-xl dark:bg-white focus:outline-none dark:text-black"
       placeholder="Type here..."
       id="newItem"
     />
