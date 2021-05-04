@@ -27,4 +27,4 @@ npm run dev
 
 ### NOTE:
 * To use the deploy.sh script to deploy to *gh-pages*, change the name **lance1997** to your github username and change the repo name **svelte-todo-demo** to your repo.
-* Also change the **base** directory config in the `vite.config.js` file to your repository name.
+* Also uncomment the **base** directory config in the `vite.config.js` file to your repository name. Note this change will affect local builds, so for local builds remove that config.
